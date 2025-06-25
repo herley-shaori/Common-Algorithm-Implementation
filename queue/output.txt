@@ -1,0 +1,62 @@
+Queue Simulation
+
+Iteration 1
+Action : ENQUEUE 3
+Final condition:
+Front [ 3 ] Rear
+Next action : ENQUEUE 4
+-----------------------------
+Iteration 2
+Action : ENQUEUE 4
+Final condition:
+Front [ 3 ] -> [ 4 ] Rear
+Next action : ENQUEUE 5
+-----------------------------
+Iteration 3
+Action : ENQUEUE 5
+Final condition:
+Front [ 3 ] -> [ 4 ] -> [ 5 ] Rear
+Next action : ENQUEUE 67
+-----------------------------
+Iteration 4
+Action : ENQUEUE 67
+Final condition:
+Front [ 3 ] -> [ 4 ] -> [ 5 ] -> [ 67 ] Rear
+Next action : ENQUEUE 10
+-----------------------------
+Iteration 5
+Action : ENQUEUE 10
+Final condition:
+Front [ 3 ] -> [ 4 ] -> [ 5 ] -> [ 67 ] -> [ 10 ] Rear
+Next action : DEQUEUE
+-----------------------------
+Iteration 6
+Action : DEQUEUE -> 3
+Final condition:
+Front [ 4 ] -> [ 5 ] -> [ 67 ] -> [ 10 ] Rear
+Next action : DEQUEUE
+-----------------------------
+Iteration 7
+Action : DEQUEUE -> 4
+Final condition:
+Front [ 5 ] -> [ 67 ] -> [ 10 ] Rear
+Next action : DEQUEUE
+-----------------------------
+Iteration 8
+Action : DEQUEUE -> 5
+Final condition:
+Front [ 67 ] -> [ 10 ] Rear
+Next action : DEQUEUE
+-----------------------------
+Iteration 9
+Action : DEQUEUE -> 67
+Final condition:
+Front [ 10 ] Rear
+Next action : DEQUEUE
+-----------------------------
+Iteration 10
+Action : DEQUEUE -> 10
+Final condition:
+Front [empty]
+Next action : [none]
+-----------------------------
