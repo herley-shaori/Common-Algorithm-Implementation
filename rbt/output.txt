@@ -1,0 +1,138 @@
+Red-Black Tree Simulation (input: 1, 2, 3, 4, 45, 6, 8)
+
+Insert 1
+Insert 2
+Insert 3
+Insert 4
+Insert 45
+Insert 6
+Insert 8
+
+BFS Traversal with Queue States
+
+Iteration 1
+Action : VISIT front node
+Queue before action:
+Queue: [ 2(B) ]
+Final condition:
+Queue: [ 1(B) ] -> [ 4(R) ]
+Next action : VISIT front node
+Tree Visualization:
+
+[2(B)]
+-----------------------------
+-----------------------------
+Iteration 2
+Action : VISIT front node
+Queue before action:
+Queue: [ 1(B) ] -> [ 4(R) ]
+Final condition:
+Queue: [ 4(R) ]
+Next action : VISIT front node
+Tree Visualization:
+
+[2(B)]
+
+      [1(B)]
+-----------------------------
+-----------------------------
+Iteration 3
+Action : VISIT front node
+Queue before action:
+Queue: [ 4(R) ]
+Final condition:
+Queue: [ 3(B) ] -> [ 8(B) ]
+Next action : VISIT front node
+Tree Visualization:
+
+      [4(R)]
+
+[2(B)]
+
+      [1(B)]
+-----------------------------
+-----------------------------
+Iteration 4
+Action : VISIT front node
+Queue before action:
+Queue: [ 3(B) ] -> [ 8(B) ]
+Final condition:
+Queue: [ 8(B) ]
+Next action : VISIT front node
+Tree Visualization:
+
+      [4(R)]
+
+            [3(B)]
+
+[2(B)]
+
+      [1(B)]
+-----------------------------
+-----------------------------
+Iteration 5
+Action : VISIT front node
+Queue before action:
+Queue: [ 8(B) ]
+Final condition:
+Queue: [ 6(R) ] -> [ 45(R) ]
+Next action : VISIT front node
+Tree Visualization:
+
+            [8(B)]
+
+      [4(R)]
+
+            [3(B)]
+
+[2(B)]
+
+      [1(B)]
+-----------------------------
+-----------------------------
+Iteration 6
+Action : VISIT front node
+Queue before action:
+Queue: [ 6(R) ] -> [ 45(R) ]
+Final condition:
+Queue: [ 45(R) ]
+Next action : VISIT front node
+Tree Visualization:
+
+            [8(B)]
+
+                  [6(R)]
+
+      [4(R)]
+
+            [3(B)]
+
+[2(B)]
+
+      [1(B)]
+-----------------------------
+-----------------------------
+Iteration 7
+Action : VISIT front node
+Queue before action:
+Queue: [ 45(R) ]
+Final condition:
+Queue: [empty]
+Next action : [none]
+Tree Visualization:
+
+                  [45(R)]
+
+            [8(B)]
+
+                  [6(R)]
+
+      [4(R)]
+
+            [3(B)]
+
+[2(B)]
+
+      [1(B)]
+-----------------------------
+-----------------------------
